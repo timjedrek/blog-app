@@ -1,5 +1,36 @@
 <h1>New Article</h1>
 
+<%= form_with model: @article do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+    <% @article.errors.full_messages_for(:title).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %><br>
+    <% @article.errors.full_messages_for(:text).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+
+
+
+
+<!--
+I disontinued the tutorial the other day and it seems like either what I wrote was malarky or they updated everything and now it's hard to continue using the previous code.  It looks like instead of ul and li, they just use divs in the new one.  meh,.  They also changed text to body and also f to form
+
+<h1>New Article</h1>
+
 
 <%= form_for :article, url: articles_path do |form| %>
  
@@ -34,3 +65,5 @@
 <% end %>
  
 <%= link_to 'Back', articles_path %>
+
+-->
