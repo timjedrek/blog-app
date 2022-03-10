@@ -16,6 +16,7 @@
                   } %>
 
 <h2>Comments</h2>
+<!--
 <% @article.comments.each do |comment| %>
   <p>
     <strong>Commenter:</strong>
@@ -27,6 +28,12 @@
     <%= comment.body %>
   </p>
 <% end %>
+
+refactored into:
+-->
+<%= render @article.comments %>
+
+
 
 <h2>Add a comment:</h2>
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
