@@ -863,7 +863,7 @@ html {
     width:auto
    }
    .tj-menu-heading {
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     color:#565d64
    }
    .tj-menu-link {
