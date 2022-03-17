@@ -1,0 +1,945 @@
+html {
+    line-height:1.15;
+    -webkit-text-size-adjust:100%
+   }
+   body {
+    margin:0
+   }
+   main {
+    display:block
+   }
+   h1 {
+    font-size:2em;
+    margin:.67em 0
+   }
+   hr {
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
+    height:0;
+    overflow:visible
+   }
+   pre {
+    font-family:monospace,monospace;
+    font-size:1em
+   }
+   a {
+    background-color:transparent
+   }
+   abbr[title] {
+    border-bottom:none;
+    text-decoration:underline;
+    -webkit-text-decoration:underline dotted;
+    text-decoration:underline dotted
+   }
+   b,
+   strong {
+    font-weight:bolder
+   }
+   code,
+   kbd,
+   samp {
+    font-family:monospace,monospace;
+    font-size:1em
+   }
+   small {
+    font-size:80%
+   }
+   sub,
+   sup {
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline
+   }
+   sub {
+    bottom:-.25em
+   }
+   sup {
+    top:-.5em
+   }
+   img {
+    border-style:none
+   }
+   button,
+   input,
+   optgroup,
+   select,
+   textarea {
+    font-family:inherit;
+    font-size:100%;
+    line-height:1.15;
+    margin:0
+   }
+   button,
+   input {
+    overflow:visible
+   }
+   button,
+   select {
+    text-transform:none
+   }
+   [type=button],
+   [type=reset],
+   [type=submit],
+   button {
+    -webkit-appearance:button
+   }
+   [type=button]::-moz-focus-inner,
+   [type=reset]::-moz-focus-inner,
+   [type=submit]::-moz-focus-inner,
+   button::-moz-focus-inner {
+    border-style:none;
+    padding:0
+   }
+   [type=button]:-moz-focusring,
+   [type=reset]:-moz-focusring,
+   [type=submit]:-moz-focusring,
+   button:-moz-focusring {
+    outline:1px dotted ButtonText
+   }
+   fieldset {
+    padding:.35em .75em .625em
+   }
+   legend {
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    color:inherit;
+    display:table;
+    max-width:100%;
+    padding:0;
+    white-space:normal
+   }
+   progress {
+    vertical-align:baseline
+   }
+   textarea {
+    overflow:auto
+   }
+   [type=checkbox],
+   [type=radio] {
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0
+   }
+   [type=number]::-webkit-inner-spin-button,
+   [type=number]::-webkit-outer-spin-button {
+    height:auto
+   }
+   [type=search] {
+    -webkit-appearance:textfield;
+    outline-offset:-2px
+   }
+   [type=search]::-webkit-search-decoration {
+    -webkit-appearance:none
+   }
+   ::-webkit-file-upload-button {
+    -webkit-appearance:button;
+    font:inherit
+   }
+   details {
+    display:block
+   }
+   summary {
+    display:list-item
+   }
+   template {
+    display:none
+   }
+   [hidden] {
+    display:none
+   }
+   html {
+    font-family:sans-serif
+   }
+   .hidden,
+   [hidden] {
+    display:none!important
+   }
+   .tj-img {
+    max-width:100%;
+    height:auto;
+    display:block
+   }
+   .tj-g {
+    letter-spacing:-.31em;
+    text-rendering:optimizespeed;
+    font-family:FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:row wrap;
+    flex-flow:row wrap;
+    -ms-flex-line-pack:start;
+    align-content:flex-start
+   }
+   @media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+    table .tj-g {
+     display:block
+    }
+   }
+   .opera-only :-o-prefocus,
+   .tj-g {
+    word-spacing:-0.43em
+   }
+   .tj-u {
+    display:inline-block;
+    letter-spacing:normal;
+    word-spacing:normal;
+    vertical-align:top;
+    text-rendering:auto
+   }
+   .tj-g [class*=tj-u] {
+    font-family:sans-serif
+   }
+   .tj-u-1,
+   .tj-u-1-1,
+   .tj-u-1-12,
+   .tj-u-1-2,
+   .tj-u-1-24,
+   .tj-u-1-3,
+   .tj-u-1-4,
+   .tj-u-1-5,
+   .tj-u-1-6,
+   .tj-u-1-8,
+   .tj-u-10-24,
+   .tj-u-11-12,
+   .tj-u-11-24,
+   .tj-u-12-24,
+   .tj-u-13-24,
+   .tj-u-14-24,
+   .tj-u-15-24,
+   .tj-u-16-24,
+   .tj-u-17-24,
+   .tj-u-18-24,
+   .tj-u-19-24,
+   .tj-u-2-24,
+   .tj-u-2-3,
+   .tj-u-2-5,
+   .tj-u-20-24,
+   .tj-u-21-24,
+   .tj-u-22-24,
+   .tj-u-23-24,
+   .tj-u-24-24,
+   .tj-u-3-24,
+   .tj-u-3-4,
+   .tj-u-3-5,
+   .tj-u-3-8,
+   .tj-u-4-24,
+   .tj-u-4-5,
+   .tj-u-5-12,
+   .tj-u-5-24,
+   .tj-u-5-5,
+   .tj-u-5-6,
+   .tj-u-5-8,
+   .tj-u-6-24,
+   .tj-u-7-12,
+   .tj-u-7-24,
+   .tj-u-7-8,
+   .tj-u-8-24,
+   .tj-u-9-24 {
+    display:inline-block;
+    letter-spacing:normal;
+    word-spacing:normal;
+    vertical-align:top;
+    text-rendering:auto
+   }
+   .tj-u-1-24 {
+    width:4.1667%
+   }
+   .tj-u-1-12,
+   .tj-u-2-24 {
+    width:8.3333%
+   }
+   .tj-u-1-8,
+   .tj-u-3-24 {
+    width:12.5%
+   }
+   .tj-u-1-6,
+   .tj-u-4-24 {
+    width:16.6667%
+   }
+   .tj-u-1-5 {
+    width:20%
+   }
+   .tj-u-5-24 {
+    width:20.8333%
+   }
+   .tj-u-1-4,
+   .tj-u-6-24 {
+    width:25%
+   }
+   .tj-u-7-24 {
+    width:29.1667%
+   }
+   .tj-u-1-3,
+   .tj-u-8-24 {
+    width:33.3333%
+   }
+   .tj-u-3-8,
+   .tj-u-9-24 {
+    width:37.5%
+   }
+   .tj-u-2-5 {
+    width:40%
+   }
+   .tj-u-10-24,
+   .tj-u-5-12 {
+    width:41.6667%
+   }
+   .tj-u-11-24 {
+    width:45.8333%
+   }
+   .tj-u-1-2,
+   .tj-u-12-24 {
+    width:50%
+   }
+   .tj-u-13-24 {
+    width:54.1667%
+   }
+   .tj-u-14-24,
+   .tj-u-7-12 {
+    width:58.3333%
+   }
+   .tj-u-3-5 {
+    width:60%
+   }
+   .tj-u-15-24,
+   .tj-u-5-8 {
+    width:62.5%
+   }
+   .tj-u-16-24,
+   .tj-u-2-3 {
+    width:66.6667%
+   }
+   .tj-u-17-24 {
+    width:70.8333%
+   }
+   .tj-u-18-24,
+   .tj-u-3-4 {
+    width:75%
+   }
+   .tj-u-19-24 {
+    width:79.1667%
+   }
+   .tj-u-4-5 {
+    width:80%
+   }
+   .tj-u-20-24,
+   .tj-u-5-6 {
+    width:83.3333%
+   }
+   .tj-u-21-24,
+   .tj-u-7-8 {
+    width:87.5%
+   }
+   .tj-u-11-12,
+   .tj-u-22-24 {
+    width:91.6667%
+   }
+   .tj-u-23-24 {
+    width:95.8333%
+   }
+   .tj-u-1,
+   .tj-u-1-1,
+   .tj-u-24-24,
+   .tj-u-5-5 {
+    width:100%
+   }
+   .tj-button {
+    display:inline-block;
+    line-height:normal;
+    white-space:nowrap;
+    vertical-align:middle;
+    text-align:center;
+    cursor:pointer;
+    -webkit-user-drag:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box
+   }
+   .tj-button::-moz-focus-inner {
+    padding:0;
+    border:0
+   }
+   .tj-button-group {
+    letter-spacing:-.31em;
+    text-rendering:optimizespeed
+   }
+   .opera-only :-o-prefocus,
+   .tj-button-group {
+    word-spacing:-0.43em
+   }
+   .tj-button-group .tj-button {
+    letter-spacing:normal;
+    word-spacing:normal;
+    vertical-align:top;
+    text-rendering:auto
+   }
+   .tj-button {
+    font-family:inherit;
+    font-size:100%;
+    padding:.5em 1em;
+    color:rgba(0,0,0,.8);
+    border:none transparent;
+    background-color:#e6e6e6;
+    text-decoration:none;
+    border-radius:2px
+   }
+   .tj-button-hover,
+   .tj-button:focus,
+   .tj-button:hover {
+    background-image:-webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(40%,rgba(0,0,0,.05)),to(rgba(0,0,0,.1)));
+    background-image:linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1))
+   }
+   .tj-button:focus {
+    outline:0
+   }
+   .tj-button-active,
+   .tj-button:active {
+    -webkit-box-shadow:0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset;
+    box-shadow:0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset;
+    border-color:#000
+   }
+   .tj-button-disabled,
+   .tj-button-disabled:active,
+   .tj-button-disabled:focus,
+   .tj-button-disabled:hover,
+   .tj-button[disabled] {
+    border:none;
+    background-image:none;
+    opacity:.4;
+    cursor:not-allowed;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    pointer-events:none
+   }
+   .tj-button-hidden {
+    display:none
+   }
+   .tj-button-primary,
+   .tj-button-selected,
+   a.tj-button-primary,
+   a.tj-button-selected {
+    background-color:#0078e7;
+    color:#fff
+   }
+   .tj-button-group .tj-button {
+    margin:0;
+    border-radius:0;
+    border-right:1px solid rgba(0,0,0,.2)
+   }
+   .tj-button-group .tj-button:first-child {
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px
+   }
+   .tj-button-group .tj-button:last-child {
+    border-top-right-radius:2px;
+    border-bottom-right-radius:2px;
+    border-right:none
+   }
+   .tj-form input[type=color],
+   .tj-form input[type=date],
+   .tj-form input[type=datetime-local],
+   .tj-form input[type=datetime],
+   .tj-form input[type=email],
+   .tj-form input[type=month],
+   .tj-form input[type=number],
+   .tj-form input[type=password],
+   .tj-form input[type=search],
+   .tj-form input[type=tel],
+   .tj-form input[type=text],
+   .tj-form input[type=time],
+   .tj-form input[type=url],
+   .tj-form input[type=week],
+   .tj-form select,
+   .tj-form textarea {
+    padding:.5em .6em;
+    display:inline-block;
+    border:1px solid #ccc;
+    -webkit-box-shadow:inset 0 1px 3px #ddd;
+    box-shadow:inset 0 1px 3px #ddd;
+    border-radius:4px;
+    vertical-align:middle;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box
+   }
+   .tj-form input:not([type]) {
+    padding:.5em .6em;
+    display:inline-block;
+    border:1px solid #ccc;
+    -webkit-box-shadow:inset 0 1px 3px #ddd;
+    box-shadow:inset 0 1px 3px #ddd;
+    border-radius:4px;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box
+   }
+   .tj-form input[type=color] {
+    padding:.2em .5em
+   }
+   .tj-form input[type=color]:focus,
+   .tj-form input[type=date]:focus,
+   .tj-form input[type=datetime-local]:focus,
+   .tj-form input[type=datetime]:focus,
+   .tj-form input[type=email]:focus,
+   .tj-form input[type=month]:focus,
+   .tj-form input[type=number]:focus,
+   .tj-form input[type=password]:focus,
+   .tj-form input[type=search]:focus,
+   .tj-form input[type=tel]:focus,
+   .tj-form input[type=text]:focus,
+   .tj-form input[type=time]:focus,
+   .tj-form input[type=url]:focus,
+   .tj-form input[type=week]:focus,
+   .tj-form select:focus,
+   .tj-form textarea:focus {
+    outline:0;
+    border-color:#129fea
+   }
+   .tj-form input:not([type]):focus {
+    outline:0;
+    border-color:#129fea
+   }
+   .tj-form input[type=checkbox]:focus,
+   .tj-form input[type=file]:focus,
+   .tj-form input[type=radio]:focus {
+    outline:thin solid #129FEA;
+    outline:1px auto #129FEA
+   }
+   .tj-form .tj-checkbox,
+   .tj-form .tj-radio {
+    margin:.5em 0;
+    display:block
+   }
+   .tj-form input[type=color][disabled],
+   .tj-form input[type=date][disabled],
+   .tj-form input[type=datetime-local][disabled],
+   .tj-form input[type=datetime][disabled],
+   .tj-form input[type=email][disabled],
+   .tj-form input[type=month][disabled],
+   .tj-form input[type=number][disabled],
+   .tj-form input[type=password][disabled],
+   .tj-form input[type=search][disabled],
+   .tj-form input[type=tel][disabled],
+   .tj-form input[type=text][disabled],
+   .tj-form input[type=time][disabled],
+   .tj-form input[type=url][disabled],
+   .tj-form input[type=week][disabled],
+   .tj-form select[disabled],
+   .tj-form textarea[disabled] {
+    cursor:not-allowed;
+    background-color:#eaeded;
+    color:#cad2d3
+   }
+   .tj-form input:not([type])[disabled] {
+    cursor:not-allowed;
+    background-color:#eaeded;
+    color:#cad2d3
+   }
+   .tj-form input[readonly],
+   .tj-form select[readonly],
+   .tj-form textarea[readonly] {
+    background-color:#eee;
+    color:#777;
+    border-color:#ccc
+   }
+   .tj-form input:focus:invalid,
+   .tj-form select:focus:invalid,
+   .tj-form textarea:focus:invalid {
+    color:#b94a48;
+    border-color:#e9322d
+   }
+   .tj-form input[type=checkbox]:focus:invalid:focus,
+   .tj-form input[type=file]:focus:invalid:focus,
+   .tj-form input[type=radio]:focus:invalid:focus {
+    outline-color:#e9322d
+   }
+   .tj-form select {
+    height:2.25em;
+    border:1px solid #ccc;
+    background-color:#fff
+   }
+   .tj-form select[multiple] {
+    height:auto
+   }
+   .tj-form label {
+    margin:.5em 0 .2em
+   }
+   .tj-form fieldset {
+    margin:0;
+    padding:.35em 0 .75em;
+    border:0
+   }
+   .tj-form legend {
+    display:block;
+    width:100%;
+    padding:.3em 0;
+    margin-bottom:.3em;
+    color:#333;
+    border-bottom:1px solid #e5e5e5
+   }
+   .tj-form-stacked input[type=color],
+   .tj-form-stacked input[type=date],
+   .tj-form-stacked input[type=datetime-local],
+   .tj-form-stacked input[type=datetime],
+   .tj-form-stacked input[type=email],
+   .tj-form-stacked input[type=file],
+   .tj-form-stacked input[type=month],
+   .tj-form-stacked input[type=number],
+   .tj-form-stacked input[type=password],
+   .tj-form-stacked input[type=search],
+   .tj-form-stacked input[type=tel],
+   .tj-form-stacked input[type=text],
+   .tj-form-stacked input[type=time],
+   .tj-form-stacked input[type=url],
+   .tj-form-stacked input[type=week],
+   .tj-form-stacked label,
+   .tj-form-stacked select,
+   .tj-form-stacked textarea {
+    display:block;
+    margin:.25em 0
+   }
+   .tj-form-stacked input:not([type]) {
+    display:block;
+    margin:.25em 0
+   }
+   .tj-form-aligned input,
+   .tj-form-aligned select,
+   .tj-form-aligned textarea,
+   .tj-form-message-inline {
+    display:inline-block;
+    vertical-align:middle
+   }
+   .tj-form-aligned textarea {
+    vertical-align:top
+   }
+   .tj-form-aligned .tj-control-group {
+    margin-bottom:.5em
+   }
+   .tj-form-aligned .tj-control-group label {
+    text-align:right;
+    display:inline-block;
+    vertical-align:middle;
+    width:10em;
+    margin:0 1em 0 0
+   }
+   .tj-form-aligned .tj-controls {
+    margin:1.5em 0 0 11em
+   }
+   .tj-form .tj-input-rounded,
+   .tj-form input.tj-input-rounded {
+    border-radius:2em;
+    padding:.5em 1em
+   }
+   .tj-form .tj-group fieldset {
+    margin-bottom:10px
+   }
+   .tj-form .tj-group input,
+   .tj-form .tj-group textarea {
+    display:block;
+    padding:10px;
+    margin:0 0 -1px;
+    border-radius:0;
+    position:relative;
+    top:-1px
+   }
+   .tj-form .tj-group input:focus,
+   .tj-form .tj-group textarea:focus {
+    z-index:3
+   }
+   .tj-form .tj-group input:first-child,
+   .tj-form .tj-group textarea:first-child {
+    top:1px;
+    border-radius:4px 4px 0 0;
+    margin:0
+   }
+   .tj-form .tj-group input:first-child:last-child,
+   .tj-form .tj-group textarea:first-child:last-child {
+    top:1px;
+    border-radius:4px;
+    margin:0
+   }
+   .tj-form .tj-group input:last-child,
+   .tj-form .tj-group textarea:last-child {
+    top:-2px;
+    border-radius:0 0 4px 4px;
+    margin:0
+   }
+   .tj-form .tj-group button {
+    margin:.35em 0
+   }
+   .tj-form .tj-input-1 {
+    width:100%
+   }
+   .tj-form .tj-input-3-4 {
+    width:75%
+   }
+   .tj-form .tj-input-2-3 {
+    width:66%
+   }
+   .tj-form .tj-input-1-2 {
+    width:50%
+   }
+   .tj-form .tj-input-1-3 {
+    width:33%
+   }
+   .tj-form .tj-input-1-4 {
+    width:25%
+   }
+   .tj-form-message-inline {
+    display:inline-block;
+    padding-left:.3em;
+    color:#666;
+    vertical-align:middle;
+    font-size:.875em
+   }
+   .tj-form-message {
+    display:block;
+    color:#666;
+    font-size:.875em
+   }
+   @media only screen and (max-width :480px) {
+    .tj-form button[type=submit] {
+     margin:.7em 0 0
+    }
+    .tj-form input:not([type]),
+    .tj-form input[type=color],
+    .tj-form input[type=date],
+    .tj-form input[type=datetime-local],
+    .tj-form input[type=datetime],
+    .tj-form input[type=email],
+    .tj-form input[type=month],
+    .tj-form input[type=number],
+    .tj-form input[type=password],
+    .tj-form input[type=search],
+    .tj-form input[type=tel],
+    .tj-form input[type=text],
+    .tj-form input[type=time],
+    .tj-form input[type=url],
+    .tj-form input[type=week],
+    .tj-form label {
+     margin-bottom:.3em;
+     display:block
+    }
+    .tj-group input:not([type]),
+    .tj-group input[type=color],
+    .tj-group input[type=date],
+    .tj-group input[type=datetime-local],
+    .tj-group input[type=datetime],
+    .tj-group input[type=email],
+    .tj-group input[type=month],
+    .tj-group input[type=number],
+    .tj-group input[type=password],
+    .tj-group input[type=search],
+    .tj-group input[type=tel],
+    .tj-group input[type=text],
+    .tj-group input[type=time],
+    .tj-group input[type=url],
+    .tj-group input[type=week] {
+     margin-bottom:0
+    }
+    .tj-form-aligned .tj-control-group label {
+     margin-bottom:.3em;
+     text-align:left;
+     display:block;
+     width:100%
+    }
+    .tj-form-aligned .tj-controls {
+     margin:1.5em 0 0 0
+    }
+    .tj-form-message,
+    .tj-form-message-inline {
+     display:block;
+     font-size:.75em;
+     padding:.2em 0 .8em
+    }
+   }
+   .tj-menu {
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box
+   }
+   .tj-menu-fixed {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:3
+   }
+   .tj-menu-item,
+   .tj-menu-list {
+    position:relative
+   }
+   .tj-menu-list {
+    list-style:none;
+    margin:0;
+    padding:0
+   }
+   .tj-menu-item {
+    padding:0;
+    margin:0;
+    height:100%
+   }
+   .tj-menu-heading,
+   .tj-menu-link {
+    display:block;
+    text-decoration:none;
+    white-space:nowrap
+   }
+   .tj-menu-horizontal {
+    width:100%;
+    white-space:nowrap
+   }
+   .tj-menu-horizontal .tj-menu-list {
+    display:inline-block
+   }
+   .tj-menu-horizontal .tj-menu-heading,
+   .tj-menu-horizontal .tj-menu-item,
+   .tj-menu-horizontal .tj-menu-separator {
+    display:inline-block;
+    vertical-align:middle
+   }
+   .tj-menu-item .tj-menu-item {
+    display:block
+   }
+   .tj-menu-children {
+    display:none;
+    position:absolute;
+    left:100%;
+    top:0;
+    margin:0;
+    padding:0;
+    z-index:3
+   }
+   .tj-menu-horizontal .tj-menu-children {
+    left:0;
+    top:auto;
+    width:inherit
+   }
+   .tj-menu-active>.tj-menu-children,
+   .tj-menu-allow-hover:hover>.tj-menu-children {
+    display:block;
+    position:absolute
+   }
+   .tj-menu-has-children>.tj-menu-link:after {
+    padding-left:.5em;
+    content:"\25B8";
+    font-size:small
+   }
+   .tj-menu-horizontal .tj-menu-has-children>.tj-menu-link:after {
+    content:"\25BE"
+   }
+   .tj-menu-scrollable {
+    overflow-y:scroll;
+    overflow-x:hidden
+   }
+   .tj-menu-scrollable .tj-menu-list {
+    display:block
+   }
+   .tj-menu-horizontal.tj-menu-scrollable .tj-menu-list {
+    display:inline-block
+   }
+   .tj-menu-horizontal.tj-menu-scrollable {
+    white-space:nowrap;
+    overflow-y:hidden;
+    overflow-x:auto;
+    padding:.5em 0
+   }
+   .tj-menu-horizontal .tj-menu-children .tj-menu-separator,
+   .tj-menu-separator {
+    background-color:#ccc;
+    height:1px;
+    margin:.3em 0
+   }
+   .tj-menu-horizontal .tj-menu-separator {
+    width:1px;
+    height:1.3em;
+    margin:0 .3em
+   }
+   .tj-menu-horizontal .tj-menu-children .tj-menu-separator {
+    display:block;
+    width:auto
+   }
+   .tj-menu-heading {
+    text-transform:uppercase;
+    color:#565d64
+   }
+   .tj-menu-link {
+    color:#777
+   }
+   .tj-menu-children {
+    background-color:#fff
+   }
+   .tj-menu-heading,
+   .tj-menu-link {
+    padding:.5em 1em
+   }
+   .tj-menu-disabled {
+    opacity:.5
+   }
+   .tj-menu-disabled .tj-menu-link:hover {
+    background-color:transparent;
+    cursor:default
+   }
+   .tj-menu-active>.tj-menu-link,
+   .tj-menu-link:focus,
+   .tj-menu-link:hover {
+    background-color:#eee
+   }
+   .tj-menu-selected>.tj-menu-link,
+   .tj-menu-selected>.tj-menu-link:visited {
+    color:#000
+   }
+   .tj-table {
+    border-collapse:collapse;
+    border-spacing:0;
+    empty-cells:show;
+    border:1px solid #cbcbcb
+   }
+   .tj-table caption {
+    color:#000;
+    font:italic 85%/1 arial,sans-serif;
+    padding:1em 0;
+    text-align:center
+   }
+   .tj-table td,
+   .tj-table th {
+    border-left:1px solid #cbcbcb;
+    border-width:0 0 0 1px;
+    font-size:inherit;
+    margin:0;
+    overflow:visible;
+    padding:.5em 1em
+   }
+   .tj-table thead {
+    background-color:#e0e0e0;
+    color:#000;
+    text-align:left;
+    vertical-align:bottom
+   }
+   .tj-table td {
+    background-color:transparent
+   }
+   .tj-table-odd td {
+    background-color:#f2f2f2
+   }
+   .tj-table-striped tr:nth-child(2n-1) td {
+    background-color:#f2f2f2
+   }
+   .tj-table-bordered td {
+    border-bottom:1px solid #cbcbcb
+   }
+   .tj-table-bordered tbody>tr:last-child>td {
+    border-bottom-width:0
+   }
+   .tj-table-horizontal td,
+   .tj-table-horizontal th {
+    border-width:0 0 1px 0;
+    border-bottom:1px solid #cbcbcb
+   }
+   .tj-table-horizontal tbody>tr:last-child>td {
+    border-bottom-width:0
+   }
+   
