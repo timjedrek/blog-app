@@ -1,12 +1,12 @@
 
 <div class="header">
     <div class="home-menu tj-menu tj-menu-horizontal tj-menu-fixed">
-        <a class="tj-menu-heading" href="">My First Ruby on Rails Blog App</a>
+        <a class="tj-menu-heading" href="">Blog App</a>
 
         <ul class="tj-menu-list">
             <li class="tj-menu-item"><a href="#" class="tj-menu-link">Home</a></li>
             <li class="tj-menu-item"><a href="#" class="tj-menu-link">Articles</a></li>
-            <li class="tj-menu-item"><a href="#" class="tj-menu-link">New Article</a></li>
+            <li class="tj-menu-item"><%= link_to 'New article', new_article_path, class: 'tj-menu-link' %></li>
         </ul>
     </div>
 </div>
@@ -15,7 +15,7 @@
     <div class="splash">
         <%#<h1 class="splash-head">This is my blog</h1>%>
         <p class="splash-subhead">
-            I used Ruby on Rails to complete a simple blog app which has basic authentication features and  create, read, update, destroy (CRUD) functionality for "blog posts."
+            I used Ruby on Rails to complete a simple blog app which has create, read, update, destroy (CRUD) functionality for "blog posts."
         </p>
         <p>
             <a href="#" class="tj-button tj-button-primary">Let's look at some blog posts!</a>
@@ -25,16 +25,9 @@
 
 <div class="content-wrapper">
     <div class="content">
-        <h2 class="content-head is-center">Excepteur sint occaecat cupidatat.</h2>
+        <h2 class="content-head is-center">Welcome to my Ruby on Rails blog application project</h2>
 
         <div class="tj-g">
-
-    <div class="tj-u-1-1">
-        <h1>Welcome to my Ruby on Rails blog application project</h1>
-        <h3>My first custom Ruby on Rails app!!</h3>
-    </div>
-
-
     <div class="tj-u-1-1">
         <%= link_to 'My Blog', controller: 'articles' %>
         <%= link_to 'New article', new_article_path, class: 'test' %>
@@ -145,8 +138,7 @@
     </div>
 
     <div class="footer l-box is-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
+        Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://timjedrek.com">Tim Jedrek LLC</a>
     </div>
 
 </div>
