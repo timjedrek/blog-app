@@ -4,7 +4,7 @@
         <a class="tj-menu-heading" href="">Blog App</a>
 
         <ul class="tj-menu-list">
-            <li class="tj-menu-item"><a href="#" class="tj-menu-link">Home</a></li>
+            <li class="tj-menu-item"><%= link_to 'Home', root_path, class: 'tj-menu-link' %></li>
             <li class="tj-menu-item"><a href="#" class="tj-menu-link">Articles</a></li>
             <li class="tj-menu-item"><%= link_to 'New article', new_article_path, class: 'tj-menu-link' %></li>
         </ul>
@@ -36,8 +36,13 @@
     </div>
     <br><br><br>
 
+
+<!--My normal year JS script isn't working here
+<script>document.write(new Date().getFullYear())</script>
+I had to write in the year... ugh
+-->
     <div class="footer l-box is-center">
-        Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://timjedrek.com">Tim Jedrek LLC</a>
+        Copyright &copy; 2022 <a href="http://timjedrek.com">Tim Jedrek LLC</a>
     </div>
 
 </div>

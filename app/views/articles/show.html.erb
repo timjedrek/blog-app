@@ -9,10 +9,14 @@
 </p>
 
 <%= link_to 'Back', articles_path %>
-<%= link_to "Edit", edit_article_path(@article) %>
+<%#= link_to "Edit", edit_article_path(@article) %>
+<%= link_to "Edit", article_path(@article), data: {
+                    turbo_method: :edit,
+                    turbo_confirm: "アップデート際、管理者に連絡下さい"
+                  } %>
 <%= link_to "Destroy", article_path(@article), data: {
                     turbo_method: :delete,
-                    turbo_confirm: "Are you sure?"
+                    turbo_confirm: "削除際、管理者に連絡下さい"
                   } %>
 
 <h2>Comments</h2>
