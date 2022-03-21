@@ -14,5 +14,10 @@
             turbo_method: :delete,
             turbo_confirm: "Are you sure?"
           } %>
+
+    <%= link_to "Edit Comment", [comment.article, comment], data: {
+        turbo_method: :delete,
+        turbo_confirm: "Are you sure?"
+      } %>
   </p>
 <% end %>
