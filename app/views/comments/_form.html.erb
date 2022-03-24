@@ -7,10 +7,18 @@
     <%= form.label :body %><br>
     <%= form.text_area :body %>
   </p>
+
+<!--
+
+**Commenting out this status selector.  This was part of the tutorial but I don't want to use this feature for now.**
+
+
   <p>
     <%= form.label :status %><br>
     <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
   </p>
+-->
+
   <p>
     <%= form.submit %>
   </p>
