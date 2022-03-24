@@ -16,7 +16,11 @@ class CommentsController < ApplicationController
     @article = Article.find(params[:article_id])
     @comment = @article.comments.update(comment_params)
 
-    redirect_to article_path(@article)
+    if @comment.update(article_params)
+      redirect_to @article
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def destroy
