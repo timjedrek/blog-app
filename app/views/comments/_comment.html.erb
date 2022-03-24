@@ -12,12 +12,12 @@
   <p>
     <%= link_to "Destroy Comment", [comment.article, comment], data: {
             turbo_method: :delete,
-            turbo_confirm: "Are you sure?"
+            turbo_confirm: "In order to delete comment, please contact the administrator"
           } %>
 
     <%= link_to "Edit Comment", [comment.article, comment], data: {
         turbo_method: :edit,
-        turbo_confirm: "Are you sure?"
+        turbo_confirm: "In order to edit an article, please contact the administrator"
       } %>
   </p>
 <% end %>
