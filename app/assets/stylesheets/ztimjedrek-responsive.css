@@ -1,3 +1,5 @@
+/*timjedrek responsive start*/
+
 @media screen and (min-width: 35.5em) {
     .tj-u-sm-1, .tj-u-sm-1-1, .tj-u-sm-1-12, .tj-u-sm-1-2, .tj-u-sm-1-24, .tj-u-sm-1-3, .tj-u-sm-1-4, .tj-u-sm-1-5, .tj-u-sm-1-6, .tj-u-sm-1-8, .tj-u-sm-10-24, .tj-u-sm-11-12, .tj-u-sm-11-24, .tj-u-sm-12-24, .tj-u-sm-13-24, .tj-u-sm-14-24, .tj-u-sm-15-24, .tj-u-sm-16-24, .tj-u-sm-17-24, .tj-u-sm-18-24, .tj-u-sm-19-24, .tj-u-sm-2-24, .tj-u-sm-2-3, .tj-u-sm-2-5, .tj-u-sm-20-24, .tj-u-sm-21-24, .tj-u-sm-22-24, .tj-u-sm-23-24, .tj-u-sm-24-24, .tj-u-sm-3-24, .tj-u-sm-3-4, .tj-u-sm-3-5, .tj-u-sm-3-8, .tj-u-sm-4-24, .tj-u-sm-4-5, .tj-u-sm-5-12, .tj-u-sm-5-24, .tj-u-sm-5-5, .tj-u-sm-5-6, .tj-u-sm-5-8, .tj-u-sm-6-24, .tj-u-sm-7-12, .tj-u-sm-7-24, .tj-u-sm-7-8, .tj-u-sm-8-24, .tj-u-sm-9-24 {
         display: inline-block;
