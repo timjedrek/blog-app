@@ -46,6 +46,13 @@ label {
     text-align: center;
 }
 
+.t-box {
+    margin: 0.5em;
+    padding: 1em;
+    background-color: white;
+    border-style: none;
+    border-radius: 10px;
+}
 
 
 /*
@@ -192,7 +199,7 @@ a.tj-button-primary {
     width: 100%;
     min-height: 12%;
     z-index: 2;
-    background: white;
+    background: #f1faff;
 
 }
 
