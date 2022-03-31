@@ -1,3 +1,43 @@
+<div class="header">
+    <div class="home-menu tj-menu tj-menu-horizontal tj-menu-fixed">
+        <a class="tj-menu-heading" href="">Blog App</a>
+
+        <ul class="tj-menu-list">
+            <li class="tj-menu-item"><%= link_to 'Home', root_path, class: 'tj-menu-link' %></li>
+            <li class="tj-menu-item"><a href="#" class="tj-menu-link">Articles</a></li>
+            <li class="tj-menu-item"><%= link_to 'New article', new_article_path, class: 'tj-menu-link' %></li>
+        </ul>
+    </div>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+        <%#<h1 class="splash-head">This is my blog</h1>%>
+        <p class="splash-subhead">
+            I used Ruby on Rails to complete a simple blog app which has create, read, update, destroy (CRUD) functionality for "blog posts."
+        </p>
+        <p>
+            <a href="#" class="tj-button tj-button-primary">Let's look at some blog posts!</a>
+        </p>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center">Welcome to my Ruby on Rails blog application project</h2>
+
+        <div class="tj-g">
+            <div class="tj-u-1-1">
+                <%= link_to 'My Blog', controller: 'articles' %>
+                <%= link_to 'New article', new_article_path, class: 'test' %>
+                <%= render 'articles/wholelist'%>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+
+
 <h1>Listing articles</h1>
  <!--Our blog has <%#= Article.public_count %> articles and counting!-->
 
@@ -21,6 +61,9 @@
 
 <%= link_to "New Article", new_article_path %>
 
+
+
+
 <!--Above was from original tutorial.  
 Below is the from new version of tutorial
 
@@ -40,3 +83,14 @@ Below is the from new version of tutorial
 I like the old version better so i am keeping it and just commenting this out for now
 -->
  
+
+  <div class="footer l-box is-center">
+        Copyright &copy; 2022 <a href="http://timjedrek.com">Tim Jedrek LLC</a>
+    </div>
+
+</div>
+
+<!--My normal year JS script isn't working here
+<script>document.write(new Date().getFullYear())</script>
+I had to write in the year... ugh
+-->
