@@ -91,6 +91,16 @@ a.tj-button-primary {
     font-size: 120%;
 }
 
+a.tj-button-secondary {
+    background: #1f8dd6;
+    color: white;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+.show {
+    text-align: right;
+}
 
 /*
  * -- MENU STYLES --
