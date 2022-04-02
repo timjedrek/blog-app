@@ -1,5 +1,24 @@
 <%= render "header" %>
-  
+  <br><br>
+<div class="show-content-wrapper">
+  <div class="tj-g">
+    <div class="tj-u-lg-1-3 tj-u-1 l-box">
+      <div class="t-box">
+        <h3 class="content-subhead">
+          <b><%= @article.title %></b>
+        </h3>
+        <div>
+          <%= @article.text %>
+          <br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1>OLD SHIT THAT IS GETTING REFORMATTED</h1>
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -19,6 +38,9 @@
                     turbo_method: :delete,
                     turbo_confirm: "In order to delete an article, please contact the administrator"
                   } %>
+
+
+
 
 <h2>Comments</h2>
 <%= render @article.comments %>
