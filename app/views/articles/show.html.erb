@@ -1,15 +1,5 @@
-<div class="header">
-    <div class="home-menu tj-menu tj-menu-horizontal tj-menu-fixed">
-        <a class="tj-menu-heading" href="">Blog App</a>
-
-        <ul class="tj-menu-list">
-            <li class="tj-menu-item"><%= link_to 'Home', root_path, class: 'tj-menu-link' %></li>
-            <li class="tj-menu-item"><a href="#articlesgohere" class="tj-menu-link">Articles</a></li>
-            <li class="tj-menu-item"><%= link_to 'New article', new_article_path, class: 'tj-menu-link' %></li>
-        </ul>
-    </div>
-</div>
-
+<%= render "header" %>
+  
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
