@@ -4,7 +4,7 @@
 
         <ul class="tj-menu-list">
             <li class="tj-menu-item"><%= link_to 'Home', root_path, class: 'tj-menu-link' %></li>
-            <li class="tj-menu-item"><a href="#" class="tj-menu-link">Articles</a></li>
+            <li class="tj-menu-item"><a href="#articlesgohere" class="tj-menu-link">Articles</a></li>
             <li class="tj-menu-item"><%= link_to 'New article', new_article_path, class: 'tj-menu-link' %></li>
         </ul>
     </div>
@@ -17,12 +17,13 @@
             I used Ruby on Rails to complete a simple blog app which has create, read, update, destroy (CRUD) functionality for "blog posts."
         </p>
         <p>
-            <a href="#" class="tj-button tj-button-primary">Let's look at some blog posts!</a>
+            <a href="#articlesgohere" class="tj-button tj-button-primary">Let's look at some blog posts!</a>
+            <a href="#articlesgohere" class="tj-button tj-button-secondary">Write a new article</a>
         </p>
     </div>
 </div>
 
-<div class="content-wrapper">
+<div class="content-wrapper" id="articlesgohere">
     <!--<div class="content">
     
         <h2 class="content-head is-center">Welcome to my Ruby on Rails blog application project</h2>
@@ -46,7 +47,7 @@
 
 
 
-<br><br><br>
+<br><br>
 <div class="tj-g">
     <% @articles.reverse_each do |article| %>
       <div class="tj-u-lg-1-3 tj-u-1 l-box">
