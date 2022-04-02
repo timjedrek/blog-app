@@ -309,6 +309,14 @@ a.tj-button-secondary {
 
 }
 
+.svgimg {
+    fill:#7f8c8d;
+}
+
+.svgimg:hover {
+    fill:red;
+}
+
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
  * On desktops and other large devices, we want to over-ride some
