@@ -54,11 +54,12 @@
           <h3 class="content-subhead">
             <b><%= article.title %></b>
           </h3>
-          <div class="text">
+          <div>
             <%= truncate(article.text, length: 100) %>
+            <br><br>
           </div>
           <div class="show">
-            <%= link_to 'Read More', article_path(article), :class => 'tj-button tj-button-primary ' %>
+            <%= link_to 'Read More', article_path(article), :class => 'tj-button tj-button-primary' %>
           </div>
         </div>
       </div>
