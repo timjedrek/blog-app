@@ -66,8 +66,7 @@ label {
 }
 
 .tj-form input[type] {
-    border: 2px solid #ddd;
-    box-shadow: none;
+    box-shadow:rgba(0,0,0, 0.10);
     font-size: 100%;
     width: 100%;
     margin-bottom: 1em;
@@ -106,6 +105,7 @@ Random ones i guess? $$$$$$$$$
     text-align: right;
 }
 
+/*the border 0px thing doesn't work*/
 .tj-button-no-border {
     background-color: #1f8dd6;
     color: white;

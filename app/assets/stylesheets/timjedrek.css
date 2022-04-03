@@ -675,7 +675,8 @@ html {
     margin:.35em 0
    }
    .tj-form .tj-input-1 {
-    width:100%
+    width:100%;
+    height: 20em
    }
    .tj-form .tj-input-3-4 {
     width:75%
