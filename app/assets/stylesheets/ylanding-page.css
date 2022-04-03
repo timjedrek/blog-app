@@ -98,9 +98,25 @@ a.tj-button-secondary {
     font-size: 120%;
 }
 
+/*
+Random ones i guess? $$$$$$$$$
+*/
+
 .right-align {
     text-align: right;
 }
+
+.tj-button-no-border {
+    background-color: #1f8dd6;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    border: 0px solid;
+}
+
+
+
+
 
 /*
  * -- MENU STYLES --
