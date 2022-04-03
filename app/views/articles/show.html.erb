@@ -52,23 +52,25 @@
         </h3>
         <div>
         <% @article.comments.reverse_each do |comment| %>
-          <p>
-            <strong><%= comment.commenter %></strong>
-            
-          </p>
-          <p>
-            <div class="tj-g">
-              <div class="tj-u-5-6">
-                <%= comment.body %>
+          <%# comment.persisted? do %>
+            <p>
+              <strong><%= comment.commenter %></strong>
+              
+            </p>
+            <p>
+              <div class="tj-g">
+                <div class="tj-u-5-6">
+                  <%= comment.body %>
+                </div>
+                <div class="tj-u-1-6 right-align">
+                  <%= link_to image_tag('delete.svg'), [comment.article, comment], data: {
+                        turbo_method: :delete,
+                        turbo_confirm: "In order to delete comment, please contact the administrator"
+                      } %>
+                </div>
               </div>
-              <div class="tj-u-1-6 right-align">
-                <%= link_to image_tag('delete.svg'), [comment.article, comment], data: {
-                      turbo_method: :delete,
-                      turbo_confirm: "In order to delete comment, please contact the administrator"
-                    } %>
-              </div>
-            </div>
-          </p>
+            </p>
+          <%# end %>
         <% end %>
 
         <%#= render @article.comments %>
