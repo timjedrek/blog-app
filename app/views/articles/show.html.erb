@@ -53,20 +53,21 @@
         <div>
         <% @article.comments.reverse_each do |comment| %>
           <p>
-            <strong>Commenter: </strong>
-            <%= comment.commenter %>
+            <strong><%= comment.commenter %></strong>
+            
           </p>
-
           <p>
-            <strong>Comment:</strong>
-            <%= comment.body %>
-          </p>
-
-          <p>
-            <%= link_to "Destroy Comment", [comment.article, comment], data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "In order to delete comment, please contact the administrator"
-                  } %>
+            <div class="tj-g">
+              <div class="tj-u-5-6">
+                <%= comment.body %>
+              </div>
+              <div class="tj-u-1-6 right-align">
+                <%= link_to image_tag('delete.svg'), [comment.article, comment], data: {
+                      turbo_method: :delete,
+                      turbo_confirm: "In order to delete comment, please contact the administrator"
+                    } %>
+              </div>
+            </div>
           </p>
         <% end %>
 
