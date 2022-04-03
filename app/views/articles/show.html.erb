@@ -51,7 +51,26 @@
           <b>Previous Comments</b>
         </h3>
         <div>
-          <%= render @article.comments %>
+        <% @article.comments.reverse_each do |comment| %>
+          <p>
+            <strong>Commenter: </strong>
+            <%= comment.commenter %>
+          </p>
+
+          <p>
+            <strong>Comment:</strong>
+            <%= comment.body %>
+          </p>
+
+          <p>
+            <%= link_to "Destroy Comment", [comment.article, comment], data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "In order to delete comment, please contact the administrator"
+                  } %>
+          </p>
+        <% end %>
+
+        <%#= render @article.comments %>
         </div>
       </div>
     </div>
