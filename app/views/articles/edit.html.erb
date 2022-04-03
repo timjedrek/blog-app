@@ -1,3 +1,22 @@
-<h1>Update Article</h1>
+<%= render "header" %>
 
-<%= render "form", article: @article %>
+<br><br><br>
+<div class="show-content-wrapper">
+  <div class="tj-g content">
+    <div class="tj-u-lg-1-4"></div>
+    <div class="tj-u-lg-1-2 tj-u-1 l-box">
+      <div class="t-box">
+        <h3 class="content-subhead">
+          <b>Update Article</b>
+        </h3>
+        <div>
+          <%= render "form", article: @article %>
+        </div>
+      </div>
+    </div>
+    <div class="tj-u-lg-1-4"></div>
+  </div>
+
+
+<%= render "footer" %>
+</div>
