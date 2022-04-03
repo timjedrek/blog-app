@@ -1,4 +1,4 @@
-<%= form_with model: article do |form| %>
+<%= form_with class: 'tj-form' , model: article do |form| %>
   <div>
     <%= form.label :title %><br>
     <%= form.text_field :title %>
@@ -9,7 +9,7 @@
 
   <div>
     <%= form.label :text %><br>
-    <%= form.text_area :text %><br>
+    <%= form.text_area :text, class: 'tj-input-1' %><br>
     <% article.errors.full_messages_for(:text).each do |message| %>
       <div><%= message %></div>
     <% end %>
@@ -24,8 +24,8 @@
   <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
 </div>
 -->
-
+  <br>
   <div>
-    <%= form.submit %>
+    <%= form.submit class: 'tj-button-no-border'%>
   </div>
 <% end %>
