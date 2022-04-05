@@ -10,21 +10,20 @@
         <h3 class="content-subhead">
           <b><%= @article.title %></b>
         </h3>
-        <div>
-          <%= @article.text %>
-          <br><br>
-        </div>
-        <div class="right-align">
+      <div>
+        <%= @article.text %>
+        <br><br>
+      </div>
+      <div class="right-align">
         <%= link_to image_tag('pencil.svg', :class => 'svgimg'), edit_article_path(@article), data: {
-                    turbo_method: :edit,
-                    turbo_confirm: "In order to edit an article, please contact the administrator"
-                  } %>
+          turbo_method: :edit,
+          turbo_confirm: "In order to edit an article, please contact the administrator"
+          } %>
         <%= link_to image_tag('delete.svg'), article_path(@article), data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "In order to delete an article, please contact the administrator"
-                  } %>
-        </div>
-
+          turbo_method: :delete,
+          turbo_confirm: "In order to delete an article, please contact the administrator"
+          } %>
+      </div>
       </div>
     </div>
     <div class="tj-u-lg-1-4"></div>
@@ -50,12 +49,13 @@
         <h3 class="content-subhead">
           <b>Previous Comments</b>
         </h3>
-        <div>
-        <% @article.comments.reverse_each do |comment| %>
-          <%# comment.persisted? do %>
+      <div>
+         
+          <% @article.comments.reverse_each do |comment| %>
+            <%#= debug comment %>
+            <% if comment.commenter != nil %>  
             <p>
               <strong><%= comment.commenter %></strong>
-              
             </p>
             <p>
               <div class="tj-g">
@@ -70,9 +70,8 @@
                 </div>
               </div>
             </p>
-          <%# end %>
-        <% end %>
-
+            <% end %>
+          <% end %>
         <%#= render @article.comments %>
         </div>
       </div>
