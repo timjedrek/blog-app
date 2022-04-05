@@ -344,3 +344,7 @@ Random ones i guess? $$$$$$$$$
         font-size: 300%;
     }
 }
+
+.year {
+    display: contents;
+}
