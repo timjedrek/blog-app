@@ -102,3 +102,141 @@
         </div>
 
     </div>
+
+
+
+
+<!--  **From articles/index.html.erb**
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <%# @articles.each do |article| %>
+    <%# unless article.archived? %>
+      <tr>
+        <td><%#= article.title %></td>
+        <td><%#= article.text %></td>
+        <td><%#= link_to 'Show', article_path(article) %></td>
+      </tr>
+     <%# end %>
+  <% end %>
+</table>
+
+<%#= link_to "New Article", new_article_path %>
+
+-->
+
+
+<!--Above was from original tutorial.  
+Below is the from new version of tutorial
+
+<h1>Articles</h1>
+
+<ul>
+  <%# @articles.each do |article| %>
+    <li>
+      <%#= link_to article.title, article %>
+    </li>
+  <%# end %>
+</ul>
+
+<%#= link_to "New Article", new_article_path %>
+
+
+I like the old version better so i am keeping it and just commenting this out for now
+-->
+
+
+
+<!-- **From articles/_form.html.erb**
+**Commenting out this status selector.  This was part of the tutorial but I don't want to use this feature for now.**
+
+
+<div>
+  <%= form.label :status %><br>
+  <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+</div>
+-->
+
+<!-- **from comments/_form.html.erb
+**Commenting out this status selector.  This was part of the tutorial but I don't want to use this feature for now.**
+  <p>
+    <%= form.label :status %><br>
+    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+  </p>
+-->
+
+
+
+<!--Keeping comment previous code for future reference-->
+
+<!--
+<%= form_with model: @article do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+    <% @article.errors.full_messages_for(:title).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %><br>
+    <% @article.errors.full_messages_for(:text).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+
+-->
+
+
+<!-- **From articles/new.html.erb
+I disontinued the tutorial the other day and it seems like either what I wrote was malarky or they updated everything and now it's hard to continue using the previous code.  It looks like instead of ul and li, they just use divs in the new one.  meh,.  They also changed text to body and also f to form
+
+<h1>New Article</h1>
+
+
+<%= form_for :article, url: articles_path do |form| %>
+ 
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@article.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+ 
+<% end %>
+ 
+<%= link_to 'Back', articles_path %>
+
+-->
