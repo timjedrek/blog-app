@@ -8,3 +8,7 @@ Abandoned feature implementation of comment edits.  Commenting out code for futu
 
 April 4, 2022:
 Development completed!
+
+April 7, 2022:
+Deployed to Heroku
+https://nameless-bastion-99716.herokuapp.com
